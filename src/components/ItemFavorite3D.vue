@@ -80,7 +80,7 @@ export default {
     }
   },
   watch: {
-    isFavorite(value) {
+    isFavorite() {
       let newItem = this.item;
       newItem["isFavorite"] = this.isFavorite;
       localStorage[this.storageKey] = JSON.stringify(newItem);
