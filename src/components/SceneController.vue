@@ -221,7 +221,7 @@ export default {
     async loadAPIData() {
       this.loading = true;
       return await this.$http
-        .get("https://extendedcollection.com/wp-json/wp/v2/library?", {
+        .get("https://extendedcollection.com/wp-json/wp/v2/posts?", {
           params: this.axiosParams,
         })
         .then((response) => (this.itemResponse = response))
